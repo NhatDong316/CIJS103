@@ -137,3 +137,102 @@ export let containsChar = (str, char) => {
     }
 }
 
+export let mergeArrays = (arr1, arr2) => {
+    const arr = [...arr1, ...arr2];
+    return arr;
+}
+
+
+export let countOccurrences = (arr, n) => {
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == n) {
+            count++; 
+        }
+    }
+    return count;
+}
+
+export let filterOdd = arr => { 
+    let oddArr = [];
+    for (let i =0; i < arr.length; i++) {
+        if (arr[i] % 2 != 0) {
+            oddArr.push(arr[i]);
+        }
+    }
+    return oddArr;
+}
+
+export let greaterThan = (arr, n) => {
+    let newArr = [];
+    for (let i =0; i < arr.length ; i++) {
+        if (arr[i] > n) {
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+
+export let factorial = (n) => {
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+export let separateEvenOdd = (arr) => {
+    let evenArr = [];
+    let oddArr = [];
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] % 2 == 0) {
+            evenArr.push(arr[i]);
+        } else {
+            oddArr.push(arr[i]);
+        }
+    }
+    let obj = {
+        evenArr, oddArr
+    }
+    return obj;
+}
+
+export let sortAsc = arr => {
+    for (let i = 0; i < arr.length; i++){
+        for (let j = i+1; j < arr.length; j++){
+            if (arr[i] > arr[j]){
+                let temp = arr[j];
+                arr[j] = arr[i];
+                arr[i] = temp;  
+            }
+        }
+    }
+    return arr;
+}
+ 
+export let sumEvenIndex = arr => {
+    let sum = 0;
+    for (let i =0; i < arr.length; i++) {
+        if (i % 2== 0) {
+            sum += arr[i];
+        }
+    }
+    return sum;
+}
+
+//multiplyByTwo([1, 2, 3]);
+export let multiplyByTwo = arr => {
+    for (let i = 0; i < arr.length; i++){
+        arr[i] *= 2;
+    }
+    return arr;
+}
+
+//arrayToString();
+export let arrayToString = arr => {
+    var str = "";
+    for (let i = 0; i < arr.length; i++) {
+        str += arr[i];
+    }
+    return str;
+}

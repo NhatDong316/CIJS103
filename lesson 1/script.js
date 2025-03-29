@@ -60,3 +60,33 @@ console.log('Bai 19:', utils.firstThree([1,2,3,4,5]));
 
 //Bai 20
 console.log('Bai 20:', utils.containsChar("javascript", "j"));
+
+//Bai 21
+console.log('Bai 21:', utils.mergeArrays([1,2], [3,4]));
+
+//Bai 22
+console.log('Bai 22:', utils.countOccurrences([1,2,2,3,2], 2));
+
+//Bai 23
+console.log('Bai 23:', utils.filterOdd([1,2,3,4]));
+
+//Bai 24
+console.log('Bai 24:', utils.greaterThan([1, 2, 3, 4], 2));
+
+//Bai 25
+console.log('Bai 25:', utils.factorial(5));
+
+//Bai 26
+console.log('Bai 26:', utils.separateEvenOdd([1,2,3,4]));
+
+//Bai 27
+console.log("Bai 27:", utils.sortAsc([3, 1, 4, 2]));
+
+//Bai 28
+console.log("Bai 28:", utils.sumEvenIndex([1, 2, 3, 4]));
+
+//Bai 29
+console.log("Bai 29:", utils.multiplyByTwo([1,2,3]));
+
+//Bai 30
+console.log("Bai 30:", utils.arrayToString(["a", "b", "c"]));
