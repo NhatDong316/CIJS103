@@ -74,6 +74,66 @@ export let isMax = (arr) => {
     return max;
 }
 
-// export let isPrime = (n) => {
+export let isPrime = (n) => {
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i == 0) {
+            return false;
+            break;
+        } else {
+            return true;
+        }
+    }
+}
 
-// }
+export let repeatStr = (str, n) => {
+    let arr =[];
+    for (let i = 1; i <=n; i++) {
+        arr.push(str);
+    } 
+    return arr.join(" ");
+}
+
+export let sumOdd = (arr) => {
+    let sum = 0;
+    for (let i =0; i< arr.length; i++){
+        if (arr[i] % 2 != 0) {
+            sum += arr[i];
+        }
+    }
+    return sum;
+}
+
+export let sumGreaterThan = (arr, n) => {
+    let sum = 0;
+    for (let i =0; i < arr.length; i++){
+        if (arr[i] > n) {
+            sum += arr[i];
+        }
+    }
+    return sum;
+}
+
+export let formatDate = (isoDate) => {
+    const shortDate = new Date(isoDate).toLocaleDateString("vi-VN");
+    return shortDate;
+}
+
+export let firstThree = arr => {
+    let newArr = [];
+    for (let i = 0; i < 3; i++){
+        newArr.push(arr[i]);
+    }
+    return newArr;
+}
+
+export let containsChar = (str, char) => {
+    for (let i =0; i < str.length; i++) {
+        if (str[i] === char) {
+            return true;
+            break;
+        } else {
+            return false;
+        }
+    }
+}
+
