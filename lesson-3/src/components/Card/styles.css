@@ -1,0 +1,65 @@
+div.card {
+    width: 287px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #1D2D35;
+    margin: 0 auto 12px auto;
+    background-color: #fff;
+}
+
+div.card-body {
+    padding: 12px;
+}
+div.card-title {
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+}
+div.task-info{
+    padding-bottom: 12px;
+}
+div.task-name {
+    font-weight: 500;
+}
+div.task-name:hover {
+    cursor: pointer;
+}
+div.task-icon:hover {
+    cursor: pointer;
+}
+
+.assignee {
+    width: 118px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #0013FE;
+    font-weight: 500;
+    color: #fff;
+}
+div.assignee:hover {
+    cursor: pointer;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;  
+    align-items: center;         
+    border-top: 1px solid #E6ECF0;
+    padding: 8px;
+}
+
+.card-footer-info {
+    display: flex;
+    justify-content: space-between;
+    width: 154px;
+    height: 24px;
+    font-weight: 700;
+}
+
+.task-attachment, .task-priority, .task-deadline {
+    display: flex;
+    gap: 2px;
+}
