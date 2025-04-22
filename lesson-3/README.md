@@ -1,3 +1,5 @@
+BECAUSE I DELETED THE node_modules folder, before 'npm run dev', run 'npm i'
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
